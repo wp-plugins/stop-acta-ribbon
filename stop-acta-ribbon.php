@@ -11,6 +11,6 @@ Author URI: http://vandorp.biz
 
 function render_stop_acta_ribbon() {
 	$ribbon_url = plugins_url( 'stop-acta-ribbon.png', __FILE__ );
-	echo "<a target='_blank' class='stop-acta-ribbon' href='http://www.avaaz.org/en/eu_save_the_internet/'><img src='{$ribbon_url}' alt='Stop ACTA' style='position: fixed; top: 0; right: 0; z-index: 100000; cursor: pointer;' /></a>";
+	echo "<a target='_blank' class='stop-acta-ribbon' href='http://www.avaaz.org/en/eu_save_the_internet/'><img src='{$ribbon_url}' alt='Stop ACTA' style='position: fixed; top: 0; right: 0; z-index: 100000; cursor: pointer; border: 0;' /></a>";
 }
 add_action( 'wp_footer', 'render_stop_acta_ribbon' );
